@@ -68,7 +68,7 @@ img {border: none;}
 #menu ul li {
     float: left;
     list-style: none;
-    padding: 53px 12px;
+    padding: 53px 12px 52px 12px;
     background: url('../images/line.gif') no-repeat top right transparent;
 }
 #menu ul li:first-child {
