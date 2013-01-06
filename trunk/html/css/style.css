@@ -1,0 +1,127 @@
+* {margin: 0; padding: 0;}
+body {
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    min-width: 1024px;
+    height: 100%;
+    background: url('../images/bg.jpg') repeat;
+}
+a {text-decoration: none; color: red;}
+img {border: none;}
+#container {
+    width: 100%;
+}
+#w_footer {
+    background: url('../images/bg_footer.jpg') repeat;
+}
+#footer {
+    min-height: 150px;
+}
+#copy_right {
+    padding: 10px 20px;
+    font-size: 12px;
+    background:#000;
+    text-align: center;
+}
+.sizePage {
+    width: 1024px;
+    margin: 0 auto;
+}
+#w_top {
+    background: #222;
+}
+#w_slideshow {
+    min-height: 300px;
+    z-index: 9;
+    background: url('../images/image1.jpg') no-repeat;
+}
+#w_bar {
+    background: url('../images/bg_bar.jpg') repeat-x;
+}
+#bar {
+     min-height: 50px;
+}
+#main {
+    min-height: 300px;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+#header {
+    height: 130px;
+    z-index: 10;
+}
+#w_header {
+    background: #141318;
+    /*border-top: 1px solid #ccc;*/
+}
+#menu ul {
+    
+}
+#menu ul li {
+    float: left;
+    list-style: none;
+    padding: 53px 12px;
+    background: url('../images/line.gif') no-repeat top right transparent;
+}
+#menu ul li:first-child {
+    background-image: url(../images/line.gif), url(../images/line.gif);
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+}
+#menu ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Cuprum', sans-serif;
+    text-transform: uppercase;
+}
+#menu ul li.active, #menu ul li:hover {
+    background: #333;
+    border-bottom: 10px solid #ED1C24;
+}
+#menu ul li.active a, #menu ul li:hover a {
+    color: #ED1C24;
+}
+.logo {
+    margin-top: 15px;
+}
+.search {
+    height: 30px;
+    margin: 0 auto;
+}
+.search .txt_search {
+    float: right;
+    width: 250px;
+    height: 20px;
+    margin-top: 3px;
+    border: 1px solid #fff;
+    line-height: 20px;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+.search .btnSearch {
+    margin-top: 3px;
+    padding: 2px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search img {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+.w_info_bar {
+    height: 30px;
+    background: #fff;
+    color: #000;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 24px;
+}
