@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Cty TNHH Sắt thép Hiền Đường</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="w_top">
+                <div class="search sizePage">
+                    <a title="Fanpage Thép Hiền Đường"  href="#"><img class="fr" src="images/facebook.png" /></a>
+                    <a title="Twitter Thép Hiền Đường" href="#"><img class="fr" src="images/twitter.png" /></a>
+                    <input class="fr btnSearch" type="submit" value="Tìm kiếm"/>
+                    <input class="txt_search" type="text" value="Nhập nội dung" onfocus="if(this.value=='Nhập nội dung') this.value='';" onblur="if(this.value=='') this.value='Nhập nội dung'"/>
+                    <div class="clear"></div>
+                </div>
+                <div id="w_header">
+                    <div id="header" class="sizePage">
+                        <div class="logo fl">
+                            <a href="#"><img src="images/logo.png" /></a>
+                        </div>
+                        <div id="menu" class="fr">
+                            <ul>
+                                <li><a href="#">Trang chủ</a></li>
+                                <li><a href="#">Giới thiệu</a></li>
+                                <li><a href="#">Sản phẩm</a></li>
+                                <li><a href="#">Tin tức</a></li>
+                                <li><a href="#">Báo giá</a></li>
+                                <li class="active"><a href="contact.html">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="w_info_bar">
+                <div class="sizePage">LIÊN HỆ</div>
+            </div>
+            <div id="main" class="sizePage">
+                <div class="fr" style="width: 640px;margin-top: 50px; margin-bottom: 50px;">
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                    <script type="text/javascript"
+                        src="http://maps.google.com/maps/api/js?sensor=false">
+                    </script>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                    <script type="text/javascript">
+                      function initialize() {
+                        var position = new google.maps.LatLng(21.113728,105.92733);
+                        var myOptions = {
+                          zoom: 14,
+                          center: position,
+                          mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        var map = new google.maps.Map(
+                            document.getElementById("map_canvas"),
+                            myOptions);
+
+                        var marker = new google.maps.Marker({
+                            position: position,
+                            map: map,
+                            title:"Cty TNHH Sắt thép Hiền Đường"
+                        });  
+
+                        var contentString = '<span style="color:#0760AD;font-size:18px;"><strong>Cty TNHH Sắt thép Hiền Đường</strong></span><br/>Địa chỉ: Cụm khu công nghiệp <br/>Điện thoại: <strong>44444</strong><br />Email: thepdahoivn@gmail.com';
+                        var infowindow = new google.maps.InfoWindow({
+                            content: contentString
+                        });
+
+                        google.maps.event.addListener(marker, 'click', function() {
+                          infowindow.open(map,marker);
+                        });
+
+                      }
+
+                    </script>
+                    </head>
+                    <body onload="initialize()">
+                      <div id="map_canvas" style="width:640px; height:300px"></div>
+                    </body>
+                    </html>
+                    <div>
+                        Nội dung chi tiết
+                    </div>
+                </div>
+                <div class="fl">
+                    CONTACT FORM
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div id="w_footer">
+                <div id="footer" class="sizePage">
+                    FOOTER
+                </div>                
+            </div>
+            <div id="w_copy_right">
+                <div id="copy_right">
+                    Copyright © 2013 CÔNG TY TNHH SẮT THÉP HIỀN ĐƯỜNG . All Right Reserved.
+                </div>                
+            </div>
+        </div>
+    </body>
+</html>
