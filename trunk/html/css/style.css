@@ -40,7 +40,7 @@ img {border: none;}
     background: url('../images/bg_bar.jpg') repeat-x;
 }
 #bar {
-     min-height: 50px;
+     min-height: 132px;
 }
 #main {
     min-height: 300px;
@@ -60,7 +60,7 @@ img {border: none;}
 }
 #w_header {
     background: #141318;
-    /*border-top: 1px solid #ccc;*/
+    border-top: 1px solid #333;    
 }
 #menu ul {
     
@@ -82,9 +82,13 @@ img {border: none;}
     font-family: 'Cuprum', sans-serif;
     text-transform: uppercase;
 }
-#menu ul li.active, #menu ul li:hover {
+#menu ul li.active {
     background: #333;
     border-bottom: 10px solid #ED1C24;
+}
+#menu ul li:hover {
+    background: #333;
+    border-bottom: 10px solid #fff; 
 }
 #menu ul li.active a, #menu ul li:hover a {
     color: #ED1C24;
@@ -124,4 +128,45 @@ img {border: none;}
     line-height: 30px;
     font-weight: bold;
     font-size: 24px;
+}
+a.button {
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    background: red;
+}
+.bar_left {
+    width: 60%;
+}
+.bar_right {
+    width: 35%;
+}
+#main .product_home {
+    
+}
+
+#main .product_home .item {
+    width: 244px;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+#main .news_list {
+    width: 750px;
+}
+#main .news_list .row {
+    height: 150px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+}
+#main .widget {
+    width: 272px;
+    margin-top: 25px;
+    min-height: 500px;
+    border: 1px solid white;
+}
+h2 {
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: normal;
 }
