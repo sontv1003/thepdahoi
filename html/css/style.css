@@ -37,7 +37,8 @@ img {border: none;}
     background: url('../images/image1.jpg') no-repeat;
 }
 #w_bar {
-    background: url('../images/bg_bar.jpg') repeat-x;
+    background: url('../images/bg_bar.jpg') repeat-x;    
+    margin-bottom: 10px;
 }
 #bar {
      min-height: 132px;
@@ -55,7 +56,7 @@ img {border: none;}
     clear: both;
 }
 #header {
-    height: 130px;
+    height: 92px;
     z-index: 10;
 }
 #w_header {
@@ -68,7 +69,7 @@ img {border: none;}
 #menu ul li {
     float: left;
     list-style: none;
-    padding: 53px 12px 52px 12px;
+    padding: 35px 15px 35px 15px;
     background: url('../images/line.gif') no-repeat top right transparent;
 }
 #menu ul li:first-child {
@@ -78,7 +79,7 @@ img {border: none;}
 }
 #menu ul li a {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Cuprum', sans-serif;
     text-transform: uppercase;
 }
@@ -93,8 +94,20 @@ img {border: none;}
 #menu ul li.active a, #menu ul li:hover a {
     color: #ED1C24;
 }
+.border_menu {
+    position: absolute;
+    top: 122px;
+    left: 0px;
+    height: 24px;
+    width: 100%;
+    background: url('../images/border_menu.png') repeat-x;
+    z-index: 10;
+}
 .logo {
-    margin-top: 15px;
+    margin-top: 10px;
+}
+.logo img {    
+    height: 70px;
 }
 .search {
     height: 30px;
@@ -123,8 +136,9 @@ img {border: none;}
 }
 .w_info_bar {
     height: 30px;
-    background: #fff;
-    color: #000;
+    margin-bottom: 10px;
+    background: #333;
+    color: #fff;
     line-height: 30px;
     font-weight: bold;
     font-size: 24px;
@@ -132,7 +146,11 @@ img {border: none;}
 a.button {
     padding: 5px 10px 5px 10px;
     color: #fff;
+    border-radius: 5px;
     background: red;
+}
+a.button:hover {
+    background: #333;
 }
 .bar_left {
     width: 60%;
@@ -140,33 +158,112 @@ a.button {
 .bar_right {
     width: 35%;
 }
+#main {
+    padding-bottom: 20px;
+}
 #main .product_home {
     
 }
 
 #main .product_home .item {
-    width: 244px;
-    height: 150px;
+    width: 224px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
-    border: 1px solid white;
     margin-right: 10px;
+    text-align: center;
+}
+#main .product_home .item:hover {
+    background: #000;
+}
+#main .product_home .item img {
+    width: 200px;
+    border-radius: 5px;
+}
+#main .product_home .item h3 a{
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+#main .product_home .item h3 a:hover {
+    text-decoration: underline;
+    color: #f00;
+}
+#main .product_home .item span {
+    display: block;
+    color: #ccc;
+    font-size: 13px;
+    line-height: 13px;
+    margin-bottom: 5px;
+}
+#main .product_home .item label {
+}
+#main .product_home .item label label {
+    color: red;
 }
 #main .news_list {
-    width: 750px;
+    width: 740px;
+}
+#main .home_news {
+    padding: 10px;
+    border-right: 1px solid #262830;
+}
+.box {
+    /*border: 1px solid #333;*/   
+    /*border-radius: 5px;*/
+}
+#main .news_list {
+    
 }
 #main .news_list .row {
-    height: 150px;
-    margin-bottom: 10px;
-    border: 1px solid white;
+    height: 140px;
+    margin-bottom: 20px;
+}
+#main .news_list .row .description {
+    width: 500px; 
+    min-height: 100px;
+}
+#main .news_list .row .des {
+    font-size: 13px;
+    color: #ccc;
+    display: block;
+    height: 65px;
+    overflow: hidden;
+}
+#main .news_list .row .description .title {
+    font-size: 15px; 
+    margin-bottom: 10px; 
+    text-transform: uppercase; 
+    font-weight: bold;
+}
+#main .news_list .row .news_img {
+    width: 200px;
+}
+#main .news_list .row .news_img img {
+    width: 200px;
+    height: 120px;
+    border-radius: 5px;
 }
 #main .widget {
-    width: 272px;
+    width: 252px;
+    padding: 10px;
     margin-top: 25px;
-    min-height: 500px;
-    border: 1px solid white;
+    min-height: 400px;
 }
 h2 {
     text-transform: uppercase;
     font-family: Arial;
     font-weight: normal;
+}
+.dot {
+    margin-left: 10px;
+}
+.line {
+    height: 2px;
+    width: 100%;
+    background: url('../images/line.png') center center no-repeat;
 }
