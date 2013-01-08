@@ -17,6 +17,7 @@ img {border: none;}
     border-top: 5px solid #242424;
 }
 #footer {
+    position: relative;
     min-height: 150px;
 }
 #copy_right {
@@ -30,9 +31,11 @@ img {border: none;}
     margin: 0 auto;
 }
 #w_top {
-    background: #222;
+    background: #101010;;
 }
 #w_slideshow {
+    position: relative;
+    margin-top: -17px;
     min-height: 300px;
     z-index: 9;
     background: url('../images/image1.jpg') no-repeat;
@@ -64,8 +67,10 @@ img {border: none;}
     z-index: 10;
 }
 #w_header {
+    position: relative;
     background: url('../images/bg_menu.png') top left repeat-x;
-    border-top: 1px solid #333;    
+    /*border-top: 1px solid #333;*/
+    z-index: 10;
 }
 #menu ul {
     
@@ -73,7 +78,7 @@ img {border: none;}
 #menu ul li {
     float: left;
     list-style: none;
-    padding: 27px 15px 25px 15px;
+    padding: 28px 15px 28px 15px;
     background: url('../images/menu-divider.png') no-repeat top right transparent;
 }
 #menu ul li:first-child {
@@ -88,15 +93,13 @@ img {border: none;}
     font-family: 'Open Sans','Cuprum', sans-serif;
     text-transform: uppercase;
 }
-#menu ul li.active {
-    background: url('../images/menu-act.png') repeat-x;
-    background-image: url(../images/menu-divider.png);
-    background-position: top right;
-    background-repeat: no-repeat;
+#menu ul li.active,#menu ul li:hover {
+    /*background: url('../images/menu-act.png') repeat-x;*/
+    background-image: url('../images/menu-act.png'), url(../images/menu-divider.png);
+    background-position: top left,top right;
+    background-repeat: repeat-x,no-repeat;
 }
-#menu ul li:hover {
-    background: url('../images/menu-act.png') repeat-x;
-}
+
 #menu ul li.active a, #menu ul li:hover a {
     color: #ED1C24;
 }
@@ -154,8 +157,9 @@ img {border: none;}
 a.button {
     padding: 5px 10px 5px 10px;
     color: #fff;
+    font-weight: 700;
     border-radius: 5px;
-    background: red;
+    background: #FB3515;
 }
 a.button:hover {
     background: #333;
@@ -181,9 +185,16 @@ a.button:hover {
     margin-bottom: 10px;
     margin-right: 10px;
     text-align: center;
+    background: #222;
 }
 #main .product_home .item:hover {
-    background: #333;
+    background: #999A9A;
+}
+#main .product_home .item:hover h3 a {
+    color: #000;
+}
+#main .product_home .item:hover span {
+    color: #000;
 }
 #main .product_home .item img {
     width: 200px;
@@ -210,6 +221,8 @@ a.button:hover {
     margin-bottom: 5px;
 }
 #main .product_home .item label {
+    font-weight: 700;
+    color: #ED1C24;
 }
 #main .product_home .item label label {
     color: red;
@@ -218,7 +231,6 @@ a.button:hover {
     width: 740px;
 }
 #main .home_news {
-    padding: 10px;
     border-right: 1px solid #262830;
 }
 .box {
@@ -238,16 +250,23 @@ a.button:hover {
 }
 #main .news_list .row .des {
     font-size: 13px;
+    line-height: 18px;
     color: #999A9A;
     display: block;
-    height: 65px;
+    height: 70px;
     overflow: hidden;
 }
 #main .news_list .row .description .title {
     font-size: 15px; 
     margin-bottom: 10px; 
     text-transform: uppercase; 
-    font-weight: bold;
+    /*font-weight: bold;*/
+}
+#main .news_list .row .description .title a {
+    color: #fff;
+}
+#main .news_list .row .description .title a:hover {
+    color: #f00;
 }
 #main .news_list .row .news_img {
     width: 200px;
@@ -256,6 +275,10 @@ a.button:hover {
     width: 200px;
     height: 120px;
     border-radius: 5px;
+    border: 5px solid #333;
+}
+#main .news_list .row .news_img img:hover {
+    border: 5px solid #999A9A;
 }
 #main .widget {
     width: 252px;
@@ -267,7 +290,9 @@ h2 {
     text-transform: uppercase;
     font-family: Arial;
     font-weight: normal;
+    padding-bottom: 10px;
     margin-bottom: 10px;
+    background: url('../images/line_title.png') bottom left repeat-x;
 }
 .dot {
     margin-left: 10px;
@@ -276,4 +301,33 @@ h2 {
     height: 2px;
     width: 100%;
     background: url('../images/line.png') center center no-repeat;
+}
+
+ul.livechat {
+
+}
+ul.livechat li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+ul.livechat span {
+    float: right;
+}
+ul.livechat label {
+    float: left;
+    margin-top: 3px;
+    width: 75px;   
+    text-align: left;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+}
+.up {
+    background: url('../images/up.png') center center no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    cursor: pointer;
 }

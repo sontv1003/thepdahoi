@@ -38,39 +38,10 @@
                 </div>
                 <div id="w_slideshow">
                     <div id="slideshow" class="sizePage">
-                        
-                    </div>
-                </div>
-                <div id="w_bar">
-                    <div id="bar" class="sizePage">
-                        <div class="fl bar_left">
-                        <span style="text-transform: uppercase; font-size: 30px; color: red; padding-top: 10px; display: block;">Sắt thép Hiền Đường</span>                        
-                        <span style="text-transform: uppercase; color: #fff;padding-bottom: 10px; display: block;">Vươn tới tầm cao mới</span>                        
-                        <a href="#" class="button">Xem thêm</a>
-                        </div>
-                        <div class="fr bar_right">
-                            Liên kết với chúng tôi
-                        </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
             </div>
             <div id="main" class="sizePage">
-                <div class="product_home">
-                    <h2>Sản phẩm<img class="dot" src="images/dot.png" /></h2>
-                    <?php for($i=0;$i<4;$i++) { ?>
-                    <div class="fl item">
-                        <h3><a href="#">Thép vòng</a></h3>
-                        <a href="#"><img src="images/item.jpg" /></a>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Curabitur ultricies commodo rhoncus. 
-                        </span>
-                        <label>Giá: 135.000 VNĐ / kg</label>
-                    </div>                  
-                    <?php } ?>
-                    <div class="clear"></div>  
-                </div>
-                <!--<div class="line"></div>-->
                 <div style="margin-top: 50px;">
                     <div class="news_list fl">
                         <h2>Tin tức mới nhất<img class="dot" src="images/dot.png" /></h2>
@@ -103,9 +74,6 @@
                                 </li>
                             </ul>
                         </div>
-                        
-                        <h2>Facebook</h2>
-                        <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FIshop227TranPhuTuSon&amp;width=255&amp;height=440&amp;show_faces=true&amp;colorscheme=dark&amp;stream=false&amp;border_color&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:255px; height:440px;" allowTransparency="true"></iframe>
                     </div>
                     <div class="clear"></div>
                 </div>
