@@ -20,7 +20,7 @@
                 <div id="w_header">                    
                     <div id="header" class="sizePage">
                         <div class="logo fl">
-                            <a href="index.html"><img src="images/logo.png" /></a>
+                            <a href="index.php"><img src="images/logo.png" /></a>
                         </div>
                         <div id="menu" class="fr">
                             <ul>
@@ -58,32 +58,32 @@
                 <div class="product_home">
                     <h2>Sản phẩm<img class="dot" src="images/dot.png" /></h2>
                     <div class="fl item">
-                        <a href="#"><img src="images/item.jpg" /></a>
                         <h3><a href="#">Thép vòng</a></h3>
+                        <a href="#"><img src="images/item.jpg" /></a>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Curabitur ultricies commodo rhoncus. 
                         </span>
                         <label>Giá: <label>135.000 VNĐ</label> / kg</label>
                     </div>                  
                     <div class="fl item">
-                        <a href="#"><img src="images/item.jpg" /></a>
                         <h3><a href="#">Thép vòng</a></h3>
+                        <a href="#"><img src="images/item.jpg" /></a>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Curabitur ultricies commodo rhoncus. 
                         </span>
                         <label>Giá: <label>135.000 VNĐ</label> / kg</label>
                     </div>                  
                     <div class="fl item">
-                        <a href="#"><img src="images/item.jpg" /></a>
                         <h3><a href="#">Thép vòng</a></h3>
+                        <a href="#"><img src="images/item.jpg" /></a>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Curabitur ultricies commodo rhoncus. 
                         </span>
                         <label>Giá: <label>135.000 VNĐ</label> / kg</label>
                     </div>                  
                     <div class="fl item">
-                        <a href="#"><img src="images/item.jpg" /></a>
                         <h3><a href="#">Thép vòng</a></h3>
+                        <a href="#"><img src="images/item.jpg" /></a>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Curabitur ultricies commodo rhoncus. 
                         </span>
@@ -96,6 +96,7 @@
                     <div class="news_list fl">
                         <h2>Tin tức mới nhất<img class="dot" src="images/dot.png" /></h2>
                         <div class="box home_news">
+                            <?php for($i=0;$i<5;$i++) { ?>
                             <div class="row">
                                 <div class="fl news_img">
                                     <a href="#"><img src="images/steel1.jpg" /></a>
@@ -104,69 +105,11 @@
                                     <div class="title">Lorem ipsum dolor sit amet</div>
                                     <span class="des">Lorem  unt unt rutrum auctor sit amet augue. Aliquam erat volunt rutrum auctor sit 
                                         amet augue. Aliquam erat vol rutrum auctor sit amet augue. Aliquam erat vol ipsum dolor sit amet, consectetur adipiscing elit.
-                            Curabitur ultricies commodo rhoncus.</span>
+                                        Curabitur ultricies commodo rhoncus.</span>
                                     <a href="#" class="button">Xem chi tiết</a>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="fl news_img">
-                                    <a href="#"><img src="images/steel1.jpg" width="200px" height="120px"/></a>
-                                </div>
-                                <div class="fr" style="width: 500px; min-height: 100px;">
-                                    <div style="font-size: 15px; margin-bottom: 10px;text-transform: uppercase; font-weight: bold;">Lorem ipsum dolor sit amet</div>
-                                    <span style="font-size: 13px; color: #ccc;">Lorem  unt unt rutrum auctor sit amet augue. Aliquam erat volunt rutrum auctor sit 
-                                        amet augue. Aliquam erat vol rutrum auctor sit amet augue. Aliquam erat vol ipsum dolor sit amet, consectetur adipiscing elit.
-                            Curabitur ultricies commodo rhoncus. </span>
-                                    <br/>
-                                    <br/>
-                                    <a href="#" class="button">Xem chi tiết</a>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="fl news_img">
-                                    <a href="#"><img src="images/steel1.jpg" width="200px" height="120px"/></a>
-                                </div>
-                                <div class="fr" style="width: 500px; min-height: 100px;">
-                                    <div style="font-size: 15px; margin-bottom: 10px;text-transform: uppercase; font-weight: bold;">Lorem ipsum dolor sit amet</div>
-                                    <span style="font-size: 13px; color: #ccc;">Lorem  unt unt rutrum auctor sit amet augue. Aliquam erat volunt rutrum auctor sit 
-                                        amet augue. Aliquam erat vol rutrum auctor sit amet augue. Aliquam erat vol ipsum dolor sit amet, consectetur adipiscing elit.
-                            Curabitur ultricies commodo rhoncus. </span>
-                                    <br/>
-                                    <br/>
-                                    <a href="#" class="button">Xem chi tiết</a>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="fl news_img">
-                                    <a href="#"><img src="images/steel1.jpg" width="200px" height="120px"/></a>
-                                </div>
-                                <div class="fr" style="width: 500px; min-height: 100px;">
-                                    <div style="font-size: 15px; margin-bottom: 10px;text-transform: uppercase; font-weight: bold;">Lorem ipsum dolor sit amet</div>
-                                    <span style="font-size: 13px; color: #ccc;">Lorem  unt unt rutrum auctor sit amet augue. Aliquam erat volunt rutrum auctor sit 
-                                        amet augue. Aliquam erat vol rutrum auctor sit amet augue. Aliquam erat vol ipsum dolor sit amet, consectetur adipiscing elit.
-                            Curabitur ultricies commodo rhoncus. </span>
-                                    <br/>
-                                    <br/>
-                                    <a href="#" class="button">Xem chi tiết</a>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="fl news_img">
-                                    <a href="#"><img src="images/steel1.jpg" width="200px" height="120px"/></a>
-                                </div>
-                                <div class="fr" style="width: 500px; min-height: 100px;">
-                                    <div style="font-size: 15px; margin-bottom: 10px;text-transform: uppercase; font-weight: bold;">Lorem ipsum dolor sit amet</div>
-                                    <span style="font-size: 13px; color: #ccc;">Lorem  unt unt rutrum auctor sit amet augue. Aliquam erat volunt rutrum auctor sit 
-                                        amet augue. Aliquam erat vol rutrum auctor sit amet augue. Aliquam erat vol ipsum dolor sit amet, consectetur adipiscing elit.
-                            Curabitur ultricies commodo rhoncus. </span>
-                                    <br/>
-                                    <br/>
-                                    <a href="#" class="button">Xem chi tiết</a>
-                                </div>
-                            </div>
+                            <?php } ?>
                         </div>
                     </div>
                     <div class="fr widget box">
