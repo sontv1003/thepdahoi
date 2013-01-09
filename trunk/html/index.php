@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div id="w_bar">
-                    <div id="bar" class="sizePage">
+<!--                    <div id="bar" class="sizePage">
                         <div class="fl bar_left">
                         <span style="text-transform: uppercase; font-size: 30px; color: red; padding-top: 10px; display: block;">Sắt thép Hiền Đường</span>                        
                         <span style="text-transform: uppercase; color: #fff;padding-bottom: 10px; display: block;">Vươn tới tầm cao mới</span>                        
@@ -52,12 +52,12 @@
                             Liên kết với chúng tôi
                         </div>
                         <div class="clear"></div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <div id="main" class="sizePage">
                 <div class="product_home">
-                    <h2>Sản phẩm<img class="dot" src="images/dot.png" /></h2>
+                    <h2><img class="dot" src="images/dot.png" />Sản phẩm</h2>
                     <?php for($i=0;$i<4;$i++) { ?>
                     <div class="fl item">
                         <h3><a href="#">Thép vòng</a></h3>
@@ -73,7 +73,7 @@
                 <!--<div class="line"></div>-->
                 <div style="margin-top: 50px;">
                     <div class="news_list fl">
-                        <h2>Tin tức mới nhất<img class="dot" src="images/dot.png" /></h2>
+                        <h2><img class="dot" src="images/dot.png" />Tin tức mới nhất</h2>
                         <div class="box home_news">
                             <?php for($i=0;$i<5;$i++) { ?>
                             <div class="row">
@@ -92,8 +92,8 @@
                         </div>
                     </div>
                     <div class="fr widget box">
-                        <h2>MENU PHẢI<img class="dot" src="images/dot.png" /></h2>
-                        <h2>Hỗ trợ trực tuyến<img class="dot" src="images/dot.png" /></h2>
+                        <h2><img class="dot" src="images/dot.png" />MENU PHẢI</h2>
+                        <h2><img class="dot" src="images/dot.png" />Hỗ trợ trực tuyến</h2>
                         <div class="box">
                             <ul class="livechat">
                                 <li>
