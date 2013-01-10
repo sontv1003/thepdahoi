@@ -19,9 +19,8 @@ get_header(); ?>
                     <?php the_content(); ?>
                 </div>
             <?php endwhile; // end of the loop. ?>
-            <fb:like href="http://<?php echo get_permalink($post->ID); ?>" send="true" width="728" show_faces="false"></fb:like>
             <div class="fb-comments">
-                    <fb:comments href="http://<?php echo get_permalink($post->ID); ?>" width=728" num_posts="20"></fb:comments>
+                    <fb:comments href="http://<?php echo get_permalink($post->ID); ?>" width=720" num_posts="20"></fb:comments>
             </div>
         </div>
     <?php get_sidebar(); ?>

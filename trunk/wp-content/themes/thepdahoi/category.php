@@ -15,11 +15,21 @@ get_header(); ?>
 <div id="main" class="sizePage">
     <div class="content">
         <div class="news_list fl">
-        <?php 
-            $cat = get_the_category(); 
-            $cat = $cat[0];
-        ?>
-            <h2><img class="dot" src="<?php bloginfo( 'template_url' ); ?>/images/dot.png" /><?php echo $cat->cat_name; ?></h2>
+<?php 
+    if(!empty($_GET['paged'])) {
+        $page = $_GET['paged'];
+    } else {
+        $page = '';
+    }
+    $cat = get_the_category(); 
+    $cat = $cat[0];
+//    $args = array(
+//        'posts_per_page' => 10,
+//        'paged' => $page
+//    );
+//    query_posts($args);
+?>
+            <h2><?php echo $cat->cat_name; ?></h2>
             <div class="box home_news">
 <?php
     if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -35,12 +45,13 @@ get_header(); ?>
                     </div>
                     <div class="fr description">
                         <div class="title"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></div>
-                        <span class="des"><?php the_excerpt_max_charlength(270) ?></span>
+                        <span class="des"><?php the_excerpt_max_charlength(230) ?></span>
                         <a href="<?php the_permalink() ?>" class="button">Xem chi tiết</a>
                     </div>
                 </div>
 <?php endwhile; endif; ?>
             </div>
+            <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
         </div>
 <?php get_sidebar(); ?>
     </div>

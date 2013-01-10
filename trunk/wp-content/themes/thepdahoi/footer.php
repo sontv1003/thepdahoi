@@ -25,7 +25,10 @@
     </body>
 </html>
 <script>
-    $('#btnUp').click(function(){
-        $('html, body').animate({ scrollTop: 0 }, 'slow');
+    jQuery(document).ready(function(){
+        var c_height = jQuery('.content').outerHeight(true);
+        var w_height = jQuery('.widget_box').outerHeight(true);
+        if(c_height > w_height)
+        jQuery('#main .widget_box').css('min-height',c_height);
     });
 </script>

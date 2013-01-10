@@ -39,7 +39,7 @@
         <div id="container">
             <div id="w_top">
                 <div class="search sizePage">
-                    <div class="fl" style="margin-top: 10px;">Hotline: 090.444.9512</div>
+                    <div class="fl" style="margin-top: 10px;">Hotline:098.275.6694 - Fax: 02413.758.189</div>
                     <a title="Fanpage Thép Hiền Đường"  href="#"><img class="fr" src="<?php bloginfo( 'template_url' ); ?>/images/facebook.png" /></a>
                     <a title="Twitter Thép Hiền Đường" href="#"><img class="fr" src="<?php bloginfo( 'template_url' ); ?>/images/twitter.png" /></a>
                     <form method="get" id="search_form" action="<?php bloginfo('home'); ?>">
@@ -61,24 +61,21 @@
                     </div>
                 </div>
                 <div id="w_slideshow">
+                    <!--
+                    <?php if ( function_exists('show_skitter') ) { show_skitter(); } ?>
+                    <?php if ( function_exists('show_nivo_slider') ) { show_nivo_slider(); } ?>
+                    -->
+                    <?php if (function_exists('nivoslider4wp_show')) { nivoslider4wp_show(); } ?>
                     <div id="slideshow" class="sizePage">
+                        <!--
                         <?php $header_image = get_header_image();
                         if ( ! empty( $header_image ) ) : ?>
                                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
                         <?php endif; ?>
+                        -->
+                        
                     </div>
                 </div>
                 <div id="w_bar">
-<!--                    <div id="bar" class="sizePage">
-                        <div class="fl bar_left">
-                        <span style="text-transform: uppercase; font-size: 30px; color: red; padding-top: 10px; display: block;">Sắt thép Hiền Đường</span>                        
-                        <span style="text-transform: uppercase; color: #fff;padding-bottom: 10px; display: block;">Vươn tới tầm cao mới</span>                        
-                        <a href="#" class="button">Xem thêm</a>
-                        </div>
-                        <div class="fr bar_right">
-                            Liên kết với chúng tôi
-                        </div>
-                        <div class="clear"></div>
-                    </div>-->
                 </div>
             </div>

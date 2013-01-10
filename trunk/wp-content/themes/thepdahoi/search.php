@@ -6,12 +6,8 @@
  * @subpackage Twenty_Twelve
  * @since Twenty Twelve 1.0
  */
-
 get_header(); ?>
-
-	<section id="primary" class="site-content">
-		<div id="content" role="main">
-
+<div id="main" class="sizePage">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -42,8 +38,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</div><!-- #content -->
-	</section><!-- #primary -->
-
 <?php get_sidebar(); ?>
+    </div>
+</div>
 <?php get_footer(); ?>

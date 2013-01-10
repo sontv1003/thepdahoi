@@ -17,13 +17,13 @@
 get_header(); ?>
 <div id="main" class="sizePage">
     <div class="product_home">
-        <h2><img class="dot" src="<?php bloginfo( 'template_url' ); ?>/images/dot.png" />Sản phẩm</h2>
+        <h2>Sản phẩm</h2>
 <?php
     global $p;
     $args = array( 'numberposts' => 100,'orderby' => 'ID', 'order'=> 'DESC','category' => 3);
     $myposts = get_posts( $args );
     if($myposts):
-    
+    $i = 1;
     foreach( $myposts as $p ) : setup_postdata($p); ?>
         <div class="fl item postID_<?php echo $p->ID; ?>">
             <h3><a href="<?php echo get_permalink($p->ID); ?>" title="<?php echo $p->post_title; ?>"><?php echo $p->post_title; ?></a></h3>
@@ -34,16 +34,20 @@ get_header(); ?>
                     echo get_the_post_thumbnail($p->ID, 'home-product');
                } ?>
             </a>
-            <span><?php the_excerpt_max_charlength(90) ?></span>
-            <label>Giá: 135.000 VNĐ / kg</label>
+            <span><?php the_excerpt_max_charlength(50) ?></span>
+            <label>Giá: Liên hệ</label>
         </div> 
-<?php endforeach; endif; ?>
+<?php if($i%4==0) {
+        echo '<div class="clear"></div>';
+    }
+?>
+<?php $i++; endforeach; endif; ?>
     <div class="clear"></div>
     </div>
     <!--<div class="line"></div>-->
     <div class="content">
         <div class="news_list fl">
-            <h2><img class="dot" src="<?php bloginfo( 'template_url' ); ?>/images/dot.png" />Tin tức mới nhất</h2>
+            <h2>Tin tức mới nhất</h2>
             <div class="box home_news">
 <?php
     $args = array(
