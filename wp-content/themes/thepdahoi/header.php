@@ -16,7 +16,7 @@
 <html class="ie ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> xmlns:fb="http://ogp.me/ns/fb#">
 <!--<![endif]-->
     <head>
         <title><?php wp_title( '|', true, 'right' ); ?></title>
@@ -28,6 +28,14 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
         <div id="container">
             <div id="w_top">
                 <div class="search sizePage">

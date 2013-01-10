@@ -66,6 +66,9 @@ img {border: none;}
     height: 92px;
     z-index: 10;
 }
+ul li {
+    list-style-type: none;
+}
 #w_header {
     position: relative;
     background: url('images/bg_menu.png') top left repeat-x;
@@ -88,6 +91,7 @@ img {border: none;}
 }
 #menu ul li a {
     color: #fff;
+    text-shadow: 1px 1px 0 rgba(104, 89, 89, 0.91);
     font-size: 17px;
     font-weight: bold;
     font-family: 'Open Sans','Cuprum', sans-serif;
@@ -233,7 +237,7 @@ a.button:hover {
     width: 740px;
 }
 #main .home_news {
-    border-right: 1px solid #262830;
+    /*border-right: 1px solid #262830;*/
 }
 .box {
     /*border: 1px solid #333;*/   
@@ -282,15 +286,18 @@ a.button:hover {
 #main .news_list .row .news_img img:hover {
     border: 5px solid #999A9A;
 }
-#main .widget {
+#main .widget_box {
     width: 252px;
-    padding: 10px;
-    margin-top: 25px;
-    min-height: 400px;
+    padding: 0 10px 10px 10px;
+    min-height: 100px;
+    border-left: 1px solid #333;
 }
 h2 {
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(104, 89, 89, 0.91);
     text-transform: uppercase;
     font-family: Arial;
+    font-size: 18px;
     font-weight: normal;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -298,6 +305,7 @@ h2 {
 }
 .dot {
     margin-right: 10px;
+    height: 13px;
 }
 .line {
     height: 2px;
@@ -332,4 +340,28 @@ ul.livechat label {
     top: -100px;
     right: 0px;
     cursor: pointer;
+}
+.content {
+    margin-top: 50px;
+}
+.content_box {
+    width: 740px;
+}
+.post {
+    color: #ccc;    
+    width: 720px;
+    line-height: 20px;
+}
+.post_title {
+    width: 700px;
+    color: #fff;
+    display: block;
+    text-shadow: 1px 1px 0 rgba(104, 89, 89, 0.91);
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    background: url('images/line_title.png') bottom left repeat-x;
 }

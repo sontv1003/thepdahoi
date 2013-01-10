@@ -12,7 +12,6 @@
 ?>
             <div id="w_footer">
                 <div id="footer" class="sizePage">
-                    <div id="btnUp" class="up"></div>
                     FOOTER
                 </div>                
             </div>

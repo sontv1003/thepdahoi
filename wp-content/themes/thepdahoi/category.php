@@ -12,40 +12,37 @@
  */
 
 get_header(); ?>
-
-	<section id="primary" class="site-content">
-		<div id="content" role="main">
-
-		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentytwelve' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
-
-			<?php if ( category_description() ) : // Show an optional category description ?>
-				<div class="archive-meta"><?php echo category_description(); ?></div>
-			<?php endif; ?>
-			</header><!-- .archive-header -->
-
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/* Include the post format-specific template for the content. If you want to
-				 * this in a child theme then include a file called called content-___.php
-				 * (where ___ is the post format) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
-
-			endwhile;
-
-			twentytwelve_content_nav( 'nav-below' );
-			?>
-
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
-
-		</div><!-- #content -->
-	</section><!-- #primary -->
-
+<div id="main" class="sizePage">
+    <div class="content">
+        <div class="news_list fl">
+        <?php 
+            $cat = get_the_category(); 
+            $cat = $cat[0];
+        ?>
+            <h2><img class="dot" src="<?php bloginfo( 'template_url' ); ?>/images/dot.png" /><?php echo $cat->cat_name; ?></h2>
+            <div class="box home_news">
+<?php
+    if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <div class="row postID_<?php echo the_ID(); ?>">
+                    <div class="fl news_img">
+                    <a href="<?php the_permalink() ?>" title="<?php echo $p_news->post_title; ?>">
+                         <?php if(!has_post_thumbnail($post->ID)) {?>
+                            <img src="<?php bloginfo( 'template_url' ); ?>/images/no_images.jpg" width="210" height="130" alt="<?php the_title() ?>" />
+                       <?php } else {
+                            echo get_the_post_thumbnail($post->ID, 'home-news');
+                       } ?>
+                     </a>
+                    </div>
+                    <div class="fr description">
+                        <div class="title"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></div>
+                        <span class="des"><?php the_excerpt_max_charlength(270) ?></span>
+                        <a href="<?php the_permalink() ?>" class="button">Xem chi tiết</a>
+                    </div>
+                </div>
+<?php endwhile; endif; ?>
+            </div>
+        </div>
 <?php get_sidebar(); ?>
+    </div>
+</div>
 <?php get_footer(); ?>

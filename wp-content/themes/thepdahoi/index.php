@@ -41,7 +41,7 @@ get_header(); ?>
     <div class="clear"></div>
     </div>
     <!--<div class="line"></div>-->
-    <div style="margin-top: 50px;">
+    <div class="content">
         <div class="news_list fl">
             <h2><img class="dot" src="<?php bloginfo( 'template_url' ); ?>/images/dot.png" />Tin tức mới nhất</h2>
             <div class="box home_news">

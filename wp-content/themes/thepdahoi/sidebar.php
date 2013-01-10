@@ -10,7 +10,7 @@
  */
 ?>
 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-<div id="secondary" class="fr widget box widget-area" role="complementary" >
+<div id="secondary" class="fr widget_box box widget-area" role="complementary" >
     <h2><img class="dot" src="images/dot.png" />MENU PHẢI</h2>
     <h2><img class="dot" src="images/dot.png" />Hỗ trợ trực tuyến</h2>
     <div class="box">
