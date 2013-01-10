@@ -39,7 +39,7 @@ img {border: none;}
     margin-top: -17px;
     min-height: 300px;
     z-index: 9;
-    background: url('images/image1.jpg') no-repeat;
+    /*background: url('images/image1.jpg') no-repeat;*/
 }
 #w_bar {
     background: url('images/bg3.jpg') repeat-x;    
@@ -209,13 +209,13 @@ a.button:hover {
 #main .product_home .item h3 a{
     display: block;
     color: #fff;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: normal;
 }
 #main .product_home .item h3 a:hover {
-    text-decoration: underline;
     color: #f00;
 }
 #main .product_home .item span {
@@ -225,6 +225,7 @@ a.button:hover {
     font-size: 13px;
     line-height: 15px;
     margin-bottom: 5px;
+    height: 32px;
 }
 #main .product_home .item label {
     font-weight: 700;
@@ -261,11 +262,12 @@ a.button:hover {
     display: block;
     height: 70px;
     overflow: hidden;
+    font-family: Arial;
 }
 #main .news_list .row .description .title {
-    font-size: 15px; 
+    font-size: 18px; 
     margin-bottom: 10px; 
-    text-transform: uppercase; 
+    /*text-transform: uppercase;*/ 
     /*font-weight: bold;*/
 }
 #main .news_list .row .description .title a {
@@ -290,9 +292,10 @@ a.button:hover {
     width: 252px;
     padding: 0 10px 10px 10px;
     min-height: 100px;
-    border-left: 1px solid #333;
+    /*border-left: 1px solid #333;*/
+    background: url('images/menu-divider.png') top left repeat-y;
 }
-h2 {
+#main h2 {
     color: #fff;
     text-shadow: 1px 1px 0 rgba(104, 89, 89, 0.91);
     text-transform: uppercase;
@@ -301,7 +304,11 @@ h2 {
     font-weight: normal;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    background: url('images/line_title.png') bottom left repeat-x;
+    padding-left: 25px;
+    background-repeat: repeat-x,no-repeat;
+    background-position: bottom left,0px 5px;
+    background-size: 1px 2px,13px 13px;
+    background-image: url('images/line_title.png'),url('images/dot.png');
 }
 .dot {
     margin-right: 10px;
@@ -351,17 +358,54 @@ ul.livechat label {
     color: #ccc;    
     width: 720px;
     line-height: 20px;
+    font-family: Arial;
 }
 .post_title {
-    width: 700px;
+    width: 720px;
     color: #fff;
     display: block;
     text-shadow: 1px 1px 0 rgba(104, 89, 89, 0.91);
-    text-transform: uppercase;
-    font-family: Arial;
-    font-size: 16px;
+    /*text-transform: uppercase;*/
+    font-family: Tahoma;
+    font-size: 20px;
     font-weight: bold;
     padding-bottom: 10px;
     margin-bottom: 10px;
     background: url('images/line_title.png') bottom left repeat-x;
+}
+.fb-comments {
+    margin-top: 20px;
+    padding-top: 10px;
+    width: 720px;
+    background: url('images/line_title.png') top left repeat-x;
+}
+.widget {
+    margin-bottom: 20px;
+}
+.widget .widget-title {
+    padding-left: 25px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    background-image: url('images/dot.png');
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+    background-size: 13px 13px;
+}
+.widget ul li {
+    margin-bottom: 10px;
+}
+.widget ul li a {
+    color: #fff;
+}
+.widget ul li a:hover {
+    color: #f00;
+}
+.entry-content {
+    padding-top: 20px;
+}
+.entry-content input[type="text"] {
+    height: 25px;
+    width: 200px;
 }
