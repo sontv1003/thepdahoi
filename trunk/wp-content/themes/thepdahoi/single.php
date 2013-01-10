@@ -6,28 +6,25 @@
  * @subpackage Twenty_Twelve
  * @since Twenty Twelve 1.0
  */
-
 get_header(); ?>
-
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'content', get_post_format() ); ?>
-
-				<nav class="nav-single">
-					<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentytwelve' ); ?></h3>
-					<span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentytwelve' ) . '</span> %title' ); ?></span>
-					<span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentytwelve' ) . '</span>' ); ?></span>
-				</nav><!-- .nav-single -->
-
-				<?php comments_template( '', true ); ?>
-
-			<?php endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+<div id="main" class="sizePage">
+    <div class="content">
+        <div class="fl content_box">
+            <?php while ( have_posts() ) : the_post(); ?>
+            <span class="post_title">
+                <img class="dot" src="<?php bloginfo( 'template_url' ); ?>/images/dot.png" /><?php the_title(); ?>
+                <fb:like href="http://<?php echo get_permalink($post->ID); ?>" send="true" width="728" show_faces="false"></fb:like>
+            </span>
+                <div class="post">
+                    <?php the_content(); ?>
+                </div>
+            <?php endwhile; // end of the loop. ?>
+            <fb:like href="http://<?php echo get_permalink($post->ID); ?>" send="true" width="728" show_faces="false"></fb:like>
+            <div class="fb-comments">
+                    <fb:comments href="http://<?php echo get_permalink($post->ID); ?>" width=728" num_posts="20"></fb:comments>
+            </div>
+        </div>
+    <?php get_sidebar(); ?>
+    </div>
+</div>
 <?php get_footer(); ?>
