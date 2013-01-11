@@ -23,7 +23,7 @@
         <meta charset="<?php bloginfo( 'charset' ); ?>" />  
         <meta name="viewport" content="width=device-width" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="shortcut icon" href="<?php bloginfo( 'template_url' ); ?>/images/favicon.ico" />
+        <link rel="shortcut icon" href="<?php bloginfo( 'template_url' ); ?>/images/favicon.png" />
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
         <?php wp_head(); ?>
     </head>
