@@ -13,14 +13,14 @@ get_header(); ?>
             <?php while ( have_posts() ) : the_post(); ?>
             <span class="post_title">
                 <img class="dot" src="<?php bloginfo( 'template_url' ); ?>/images/dot.png" /><?php the_title(); ?>
-                <fb:like href="http://<?php echo get_permalink($post->ID); ?>" send="true" width="728" show_faces="false"></fb:like>
+                <!--<fb:like href="<?php echo get_permalink($post->ID); ?>" send="true" width="728" show_faces="false"></fb:like>-->
             </span>
                 <div class="post">
                     <?php the_content(); ?>
                 </div>
             <?php endwhile; // end of the loop. ?>
             <div class="fb-comments">
-                    <fb:comments href="http://<?php echo get_permalink($post->ID); ?>" width=720" num_posts="20"></fb:comments>
+                    <fb:comments href="<?php echo get_permalink($post->ID); ?>" colorscheme="dark" width=720" num_posts="20"></fb:comments>
             </div>
         </div>
     <?php get_sidebar(); ?>
