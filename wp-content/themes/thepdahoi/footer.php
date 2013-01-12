@@ -12,7 +12,20 @@
 ?>
             <div id="w_footer">
                 <div id="footer" class="sizePage">
-                    FOOTER
+                    <div class="fl footer_info">
+                        <h4>Cty TNHH SX & TM Thép Hiền Đường</h4>
+                        <ul>
+                            <li><strong>Di động:</strong> 098.275.6694 & 0168.657.8998</li>
+                            <li><strong>Cố định:</strong> (0241) 629.3694</li>
+                            <li><strong>Fax:</strong> (0241) 375.8189</li>
+                            <li><strong>Email:</strong> <a href="mailto:thepdahoivn@gmail.com">thepdahoivn@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="fr footer_widget">
+                        <?php dynamic_sidebar('sidebar_footer'); ?>
+                        <div class="clear"></div>                        
+                    </div>
+                    <div class="clear"></div>
                 </div>                
             </div>
             <div id="w_copy_right">

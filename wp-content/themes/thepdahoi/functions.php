@@ -203,33 +203,23 @@ add_filter( 'wp_page_menu_args', 'twentytwelve_page_menu_args' );
  */
 function twentytwelve_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Main Sidebar', 'twentytwelve' ),
+		'name' => __( 'Right Sidebar', 'twentytwelve' ),
 		'id' => 'sidebar-1',
-		'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'twentytwelve' ),
+		'description' => __( 'Sidebar bên phải', 'twentytwelve' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-
+        
 	register_sidebar( array(
-		'name' => __( 'First Front Page Widget Area', 'twentytwelve' ),
-		'id' => 'sidebar-2',
-		'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'twentytwelve' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'name' => __( 'Footer Widget', 'twentytwelve' ),
+		'id' => 'sidebar_footer',
+		'description' => __( 'Sidebar phía dưới', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget_footer %2$s">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name' => __( 'Second Front Page Widget Area', 'twentytwelve' ),
-		'id' => 'sidebar-3',
-		'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'twentytwelve' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<div class="widget-footer-title">',
+		'after_title' => '</div>',
 	) );
 }
 add_action( 'widgets_init', 'twentytwelve_widgets_init' );

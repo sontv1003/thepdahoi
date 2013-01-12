@@ -20,7 +20,7 @@ get_header(); ?>
         <h2>Sản phẩm</h2>
 <?php
     global $p;
-    $args = array( 'numberposts' => 100,'orderby' => 'ID', 'order'=> 'DESC','category' => 3);
+    $args = array( 'numberposts' => 8,'orderby' => 'ID', 'order'=> 'DESC','category' => 3);
     $myposts = get_posts( $args );
     if($myposts):
     $i = 1;

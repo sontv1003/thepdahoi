@@ -5,7 +5,7 @@
 ?>
 <?php get_header(); ?>
 <div id="main" class="sizePage">
-    <div class="fr" style="width: 640px;margin-top: 50px; margin-bottom: 50px;">
+    <div class="fr contact_map">
         <h2>Bản đồ dẫn đường</h2>
         <!DOCTYPE html>
         <html>
@@ -46,15 +46,22 @@
         </script>
         </head>
         <body onload="initialize()">
-          <div id="map_canvas" style="width:640px; height:300px"></div>
+          <div id="map_canvas"></div>
         </body>
         </html>
         <div>
             Nội dung chi tiết
         </div>
     </div>
-    <div class="fl" style="margin-top: 50px; width: 350px; min-height: 400px;">
+    <div class="fl contact_form">
         <h2>Gửi thông tin</h2>
+        <span class="note">Mọi thắc mắc, hỏi đáp xin vui lòng gửi yêu cầu tới chúng tôi. Xin chân thành cảm ơn!</span>
+        <div class="contact">
+            <?php while (have_posts()) : the_post();
+                     the_content();
+                endwhile; 
+            ?>
+        </div>
     </div>
     <div class="clear"></div>
 </div>
