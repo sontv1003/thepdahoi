@@ -544,3 +544,6 @@ span.wpcf7-not-valid-tip {
     width: 262px !important;
     z-index: 100;
 }
+.contact_info {
+    margin-top: 20px;
+}
