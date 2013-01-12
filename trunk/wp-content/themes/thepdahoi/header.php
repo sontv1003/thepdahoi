@@ -39,7 +39,7 @@
         <div id="container">
             <div id="w_top">
                 <div class="search sizePage">
-                    <div class="fl" style="margin-top: 10px;">Hotline:098.275.6694 - Fax: 02413.758.189</div>
+                    <div class="fl top_info"><label>Hotline:</label> 098.275.6694 - <label>Fax:</label> (0241) 375.8189</div>
                     <a title="Fanpage Thép Hiền Đường"  href="#"><img class="fr" src="<?php bloginfo( 'template_url' ); ?>/images/facebook.png" /></a>
                     <a title="Twitter Thép Hiền Đường" href="#"><img class="fr" src="<?php bloginfo( 'template_url' ); ?>/images/twitter.png" /></a>
                     <form method="get" id="search_form" action="<?php bloginfo('home'); ?>">

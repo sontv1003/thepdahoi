@@ -82,11 +82,11 @@ ul li {
     float: left;
     list-style: none;
     padding: 25px 15px 28px 15px;
-    background: url('images/menu-divider.png') no-repeat top right transparent;
+    background: url('images/menu-divider.png') no-repeat top left transparent;
 }
-#menu ul li:first-child {
+#menu ul li:last-child {
     background-image: url(images/menu-divider.png), url(images/menu-divider.png);
-    background-position: top left, top right;
+    background-position: top right, top left;
     background-repeat: no-repeat;
 }
 #menu ul li a {
@@ -98,9 +98,8 @@ ul li {
     text-transform: uppercase;
 }
 #menu ul li.current-menu-item,#menu ul li:hover {
-    /*background: url('images/menu-act.png') repeat-x;*/
     background-image: url('images/menu-act.png'), url(images/menu-divider.png);
-    background-position: top left,top right;
+    background-position: top left,top left;
     background-repeat: repeat-x,no-repeat;
 }
 
@@ -129,7 +128,7 @@ ul li {
 .search .txt_search {
     float: right;
     width: 250px;
-    height: 20px;
+    height: 22px;
     margin-top: 3px;
     color: #ccc;
     border: 1px solid #515151;
@@ -408,4 +407,138 @@ ul.livechat label {
 .entry-content input[type="text"] {
     height: 25px;
     width: 200px;
+}
+.widget_footer {
+    width: 150px;
+    margin-right: 10px;
+    float: left;
+}
+#footer .footer_info {
+    width: 300px; 
+    height: 100%;
+    color: #CCC;    
+}
+#footer .footer_widget {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    width: 700px;
+    color: #ccc;
+}
+#footer .footer_widget .widget-footer-title {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+#footer .footer_widget a {
+    color: #ccc;
+}
+#footer .footer_widget a:hover {
+    color: #f00;
+}
+
+#footer .footer_info h4 {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #fff;
+}
+#footer .footer_info ul {
+    list-style-type: circle;
+    margin-top: 10px;
+}
+#footer .footer_info ul li {
+    list-style-type: disc;
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
+#footer .footer_info ul li a {
+    color: #E61C24;
+}
+#footer .footer_info ul li a:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+#footer .footer_widget .widget_categories,#footer .footer_widget  .widget_pages {
+    width: 100px;
+}
+#footer .footer_widget ul li {
+    list-style-type: disc;
+    margin-left: 15px;
+    padding-bottom: 5px;
+}
+#wp-calendar #today {
+    color: #f00;
+}
+.widget_recent_entries {
+    width: 300px;
+}
+.top_info {
+    margin-top: 10px;
+    font-weight: 700;
+}
+.top_info label {
+    color: #E61C24;
+}
+
+.contact_form {
+    margin-top: 50px; 
+    width: 350px;
+    min-height: 400px;
+}
+.contact_form .note {
+    margin-bottom: 20px;
+    display: block;
+    color: #999A9A;
+}
+.contact_map {
+    width: 640px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact_map #map_canvas {
+    height: 300px;
+}
+/* CONTACT FORM 7 */
+
+div.wpcf7 input[type="text"]:focus, div.wpcf7 textarea:focus {
+    background: #333;
+}
+div.wpcf7 input[type="text"],div.wpcf7 textarea {
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 10px;
+    background: #222;
+    color: #ccc;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+div.wpcf7 textarea {
+    height: 140px;
+    padding-top: 10px;
+}
+div.wpcf7 input[type="submit"] {
+    padding: 5px 10px 5px 10px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    background: #ED1C23;
+    cursor: pointer;
+}
+div.wpcf7 p {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+span.wpcf7-not-valid-tip {
+    background: none !important;
+    border: 1px solid #FF0000;
+    border-radius: 5px;
+    font-size: 10pt;
+    height: 30px;
+    left: 0px !important;
+    position: absolute;
+    top: -10px !important;
+    width: 262px !important;
+    z-index: 100;
 }
