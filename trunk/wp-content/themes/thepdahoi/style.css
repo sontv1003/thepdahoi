@@ -91,7 +91,7 @@ ul li {
 }
 #menu ul li a {
     color: #fff;
-    text-shadow: 1px 1px 0 rgba(104, 89, 89, 0.91);
+    /*text-shadow: 1px 1px 0 rgba(104, 89, 89, 0.91);*/
     font-size: 17px;
     font-weight: bold;
     font-family: 'Open Sans','Cuprum', sans-serif;
@@ -104,7 +104,7 @@ ul li {
 }
 
 #menu ul li.current-menu-item a, #menu ul li:hover a {
-    color: #ED1C24;
+    color: #EC1B23;
 }
 .border_menu {
     position: absolute;
@@ -449,7 +449,7 @@ ul.livechat label {
 #footer .footer_info ul li {
     list-style-type: disc;
     margin-left: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 #footer .footer_info ul li a {
     color: #E61C24;
@@ -513,7 +513,7 @@ div.wpcf7 input[type="text"],div.wpcf7 textarea {
     border-radius: 5px;
 }
 div.wpcf7 textarea {
-    height: 140px;
+    height: 190px;
     padding-top: 10px;
 }
 div.wpcf7 input[type="submit"] {

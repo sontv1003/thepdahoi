@@ -32,7 +32,7 @@
                 title:"Cty TNHH Sắt thép Hiền Đường"
             });  
 
-            var contentString = '<span style="color:#0760AD;font-size:18px;"><strong>Cty TNHH Sắt thép Hiền Đường</strong></span><br/>Địa chỉ: Cụm khu công nghiệp <br/>Điện thoại: <strong>44444</strong><br />Email: thepdahoivn@gmail.com';
+            var contentString = '<span style="color:#0760AD;font-size:15px;"><strong>Cty TNHH SX & TM Sắt thép Hiền Đường</strong></span><br/><span style="color:#000">Địa chỉ: Cụm khu công nghiệp Đa Hội<br/>Điện thoại: <strong>098.275.6694</strong><br />Email: thepdahoivn@gmail.com</span>';
             var infowindow = new google.maps.InfoWindow({
                 content: contentString
             });
@@ -49,8 +49,27 @@
           <div id="map_canvas"></div>
         </body>
         </html>
-        <div>
-            Nội dung chi tiết
+        <div class="contact_info">
+            <h2>&nbsp;&nbsp;&nbsp;Thông tin liên hệ:</h2>
+            <br/>
+            <table width="100%">
+                <tr>
+                    <td width="40px"><img src="<?php bloginfo( 'template_url' ); ?>/images/mobile_phone.png" width="32px" /></td>
+                    <td valign="middle">098.275.6694 & 0168.657.8998</td>
+                    <td width="40px"><img src="<?php bloginfo( 'template_url' ); ?>/images/home_phone.png" width="32px" /></td>
+                    <td valign="middle">(0241) 629.3694</td>
+                </tr>
+                <tr>
+                    <td><img src="<?php bloginfo( 'template_url' ); ?>/images/fax.png" width="32px" /></td>
+                    <td valign="middle">(0241) 375.8189</td>
+                    <td><img src="<?php bloginfo( 'template_url' ); ?>/images/email.png" width="32px" /></td>
+                    <td valign="middle"><a href="mailto:thepdahoivn@gmail.com">thepdahoi@gmail.com></a></td>
+                <tr>
+                    <td><img src="<?php bloginfo( 'template_url' ); ?>/images/address.png" width="32px" /></td>
+                    <td colspan="3" valign="middle">Cụm KCN Châu Khê - TX.Từ Sơn - Bắc Ninh</td>
+                </tr>
+            </table>
+            
         </div>
     </div>
     <div class="fl contact_form">
