@@ -19,6 +19,7 @@
                             <li><strong>Cố định:</strong> (0241) 629.3694</li>
                             <li><strong>Fax:</strong> (0241) 375.8189</li>
                             <li><strong>Email:</strong> <a href="mailto:thepdahoivn@gmail.com">thepdahoivn@gmail.com</a></li>
+                            <li><strong>Địa chỉ:</strong> Cụm KCN Châu Khê - TX.Từ Sơn - Bắc Ninh</li>
                         </ul>
                     </div>
                     <div class="fr footer_widget">
