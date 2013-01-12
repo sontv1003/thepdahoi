@@ -532,10 +532,12 @@ div.wpcf7 p {
 }
 span.wpcf7-not-valid-tip {
     background: none !important;
+    padding-left: 15px;
     border: 1px solid #FF0000;
     border-radius: 5px;
     font-size: 10pt;
     height: 30px;
+    line-height: 30px;
     left: 0px !important;
     position: absolute;
     top: -10px !important;
