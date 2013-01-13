@@ -32,7 +32,7 @@
                 title:"Cty TNHH Sắt thép Hiền Đường"
             });  
 
-            var contentString = '<span style="color:#0760AD;font-size:15px;"><strong>Cty TNHH SX & TM Sắt thép Hiền Đường</strong></span><br/><span style="color:#000">Địa chỉ: Cụm khu công nghiệp Đa Hội<br/>Điện thoại: <strong>098.275.6694</strong><br />Email: thepdahoivn@gmail.com</span>';
+            var contentString = '<span style="color:#0760AD;font-size:15px;"><strong>Cty TNHH SX & TM Sắt thép Hiền Đường</strong></span><br/><span style="color:#000">Địa chỉ: Cụm KCN Châu Khê - TX. Từ Sơn - Bắc Ninh<br/>Điện thoại: <strong>098.275.6694</strong><br />Email: thepdahoivn@gmail.com</span>';
             var infowindow = new google.maps.InfoWindow({
                 content: contentString
             });

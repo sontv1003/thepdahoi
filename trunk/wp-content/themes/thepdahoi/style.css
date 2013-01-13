@@ -432,6 +432,7 @@ ul.livechat label {
 }
 #footer .footer_widget a {
     color: #ccc;
+    font-size: 12px;
 }
 #footer .footer_widget a:hover {
     color: #f00;
@@ -496,7 +497,7 @@ ul.livechat label {
     margin-bottom: 50px;
 }
 .contact_map #map_canvas {
-    height: 300px;
+    height: 280px;
 }
 /* CONTACT FORM 7 */
 
@@ -546,4 +547,14 @@ span.wpcf7-not-valid-tip {
 }
 .contact_info {
     margin-top: 20px;
+}
+
+/* NAVI PAGE */
+.wp-pagenavi a {
+    color: #fff;
+}
+.wp-pagenavi a:hover,.wp-pagenavi span:hover, .wp-pagenavi span.current{
+    color: #fff;
+    background: #f00;
+    border: 1px solid #f00 !important;
 }

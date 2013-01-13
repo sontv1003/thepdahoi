@@ -474,7 +474,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 }
 
 if ( function_exists( 'add_image_size' ) ) {
-    add_image_size('head-slide',1360,300, true);
+    //add_image_size('head-slide',1280,300, true);
     add_image_size( 'home-product', 200, 150, true);
     add_image_size( 'home-news', 210, 130, true);
 }
