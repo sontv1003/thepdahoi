@@ -20,7 +20,7 @@ get_header(); ?>
         <h2>Sản phẩm</h2>
 <?php
     global $p;
-    $args = array( 'numberposts' => 8,'orderby' => 'ID', 'order'=> 'DESC','category' => 3);
+    $args = array( 'numberposts' => 4,'orderby' => 'ID', 'order'=> 'DESC','category' => 3);
     $myposts = get_posts( $args );
     if($myposts):
     $i = 1;
@@ -43,6 +43,11 @@ get_header(); ?>
 ?>
 <?php $i++; endforeach; endif; ?>
     <div class="clear"></div>
+    <?php
+        $productObj = get_category_by_slug('san-pham'); 
+        $cat_id = $productObj->term_id;
+    ?>
+    <div class="more"><a class="button" href="<?php echo get_category_link($cat_id); ?>">Xem thêm</a></div>
     </div>
     <!--<div class="line"></div>-->
     <div class="content">
@@ -53,7 +58,8 @@ get_header(); ?>
     $args = array(
         'cat' => 4,
         'orderby' => 'ID',
-        'order'=> 'DESC'
+        'order'=> 'DESC',
+        'posts_per_page' => 5
     );
     query_posts($args);
     if (have_posts()) : while (have_posts()) : the_post(); ?>

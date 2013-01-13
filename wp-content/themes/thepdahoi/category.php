@@ -16,18 +16,11 @@ get_header(); ?>
     <div class="content">
         <div class="news_list fl">
 <?php 
-    if(!empty($_GET['paged'])) {
-        $page = $_GET['paged'];
-    } else {
-        $page = '';
-    }
+    $productObj = get_category_by_slug('san-pham'); 
+    $cat_id = $productObj->term_id;
     $cat = get_the_category(); 
     $cat = $cat[0];
-//    $args = array(
-//        'posts_per_page' => 10,
-//        'paged' => $page
-//    );
-//    query_posts($args);
+    //var_dump($cat->slug);
 ?>
             <h2><?php echo $cat->cat_name; ?></h2>
             <div class="box home_news">
