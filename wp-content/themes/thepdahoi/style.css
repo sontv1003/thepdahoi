@@ -90,7 +90,7 @@ ul li {
     background-repeat: no-repeat;
 }
 #menu ul li a {
-    color: #fff;
+    color: #CCC;
     /*text-shadow: 1px 1px 0 rgba(104, 89, 89, 0.91);*/
     font-size: 17px;
     font-weight: bold;
@@ -124,6 +124,7 @@ ul li {
 .search {
     height: 30px;
     margin: 0 auto;
+    color: #CCC;
 }
 .search .txt_search {
     float: right;
@@ -207,7 +208,7 @@ a.button:hover {
 }
 #main .product_home .item h3 a{
     display: block;
-    color: #fff;
+    color: #ccc;
     /*text-transform: uppercase;*/
     margin-top: 10px;
     margin-bottom: 10px;
@@ -270,7 +271,7 @@ a.button:hover {
     /*font-weight: bold;*/
 }
 #main .news_list .row .description .title a {
-    color: #fff;
+    color: #CCC;
 }
 #main .news_list .row .description .title a:hover {
     color: #f00;
@@ -547,6 +548,7 @@ span.wpcf7-not-valid-tip {
 }
 .contact_info {
     margin-top: 20px;
+    color: #CCC;
 }
 
 /* NAVI PAGE */
@@ -557,4 +559,7 @@ span.wpcf7-not-valid-tip {
     color: #fff;
     background: #f00;
     border: 1px solid #f00 !important;
+}
+.fan_box .connect_action .name {
+    color: #fff !important;
 }
